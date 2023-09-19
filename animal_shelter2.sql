@@ -18,13 +18,6 @@ from (
         row_number() over (partition by o.`Animal ID`) as occur
 	from austin_animal_center_outcomes o
     order by `Animal ID`) xyz;
-    
--- try to combine both select statements and join the tables on uniID
--- potentially alter table to update the Animal ID column with uniID
-
-
-       
--- add column for new id and try to insert the values into that column for joins?
 
 -- this works but the values would need to be copy and pasted in Sheets to match the new ID's to the appropriate rows.
 
